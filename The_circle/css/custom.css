@@ -1,0 +1,407 @@
+/* left image in the registration page*/
+body{
+	background-color: #e9ebee;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://sampsonresume.com/labs/pIkfp.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+.container{
+	margin-top: 20px;
+	width: 100%;
+}
+.left_img{
+
+	vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+ 	display: none;
+}
+.glyphicon{
+	font-size: 2em;
+}
+#logo img{
+	width: 35px;
+	height: auto;
+
+}
+
+#defaultAvatar{
+	width:35px;
+	height: auto;
+}
+#search_icon img{
+	width: 20px;
+	height: auto;
+}
+#search_icon:hover{
+	background-color: #fff;
+}
+div.container-fluid{
+	background-color: #fff;
+}
+.navbar{
+	border-radius: 0;
+}
+
+.right-nav-loggedin{
+	display: none;
+}
+.navbar-brand{
+	display: none;
+	padding: 10px 15px 10px 15px;
+}
+
+.navbar-form .input-group{
+	width: 100%;
+}
+.navbar{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+}
+.navbar-left{
+	display: inline-block;
+	max-width: 400px;
+	margin-left: 20px;
+}
+.navbar-right-loggedin{
+	display: none;
+}
+.navbar .navbar-right i{
+	color:#16406b;
+}
+.navbar-toggle .icon-bar{
+	background-color: black;
+}
+.navbar-toggle{
+	margin-top:20px;
+}
+/* add profile picture popup*/
+#addProfilePicModal{
+	position: absolute;
+	top: 20%;
+   
+}
+.modal-content a, button, span{
+	display: block;
+}
+
+.addProfilePicModal img{
+	width: 100px;
+	height: 100px;
+	margin: 20px 0px;
+	border-radius: 50%;
+}
+
+.addProfilePicModal #skip{
+	margin: 10px 0px;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.nav > li:hover{
+	background-color: #111;
+}
+.addProfilePicModal .modal-content{
+	padding: 10px;
+	text-align: center;
+}
+
+/* statistic */
+.statistic, .interests,.visting_people{
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 5px ;
+	border-radius: 3px;
+	background-color: #fff;
+
+}
+.statistic, .interests{
+	box-shadow: 2px 3px 5px 3px #ddd;
+	text-align: center;
+}
+
+.statistic .preferedName{
+	font-size: 1.2em;
+	text-transform: capitalize;
+	padding: 10px 0px;
+	font-weight: bold;
+}
+.statistic img{
+	width: 100px;
+	height: auto;
+	border-radius: 50%;
+	margin: 10px 0px;
+}
+.profile_pic{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.personalInfo{
+	padding: 10px;
+	text-align: left;
+
+}
+.personalInfo p{
+
+	margin: 8px 0px;
+}
+.personalInfo i{
+	margin-right: 10px;
+}
+.visting_people{
+	margin-top: 30px;
+	background-color: #dfe5e8 ;
+	position: relative;
+	font-size: 1.2em;
+	padding: 10px;
+}
+.visting_people i{
+	position: absolute;
+	top:5px;
+	right: 5px;
+	font-size: 1.5em;
+
+}
+/* create a post panel */
+.create_post_dialog{
+	border: 1px solid #ddd;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+.create_post_dialog a{
+	text-decoration: none;
+}
+.create_post_dialog form{
+	padding: 10px;
+	padding-bottom: 0;
+	margin: 0;
+}
+.create_a_post{
+	background-color: #f6f7f9;
+	padding: 10px 10px 10px 10px;
+	margin: 0;
+
+}
+.create_post_dialog textarea{
+	width: 100%;
+}
+.create_post_dialog  i{
+	margin-right: 5px;
+}
+.create_a_post .post_btn{
+	padding: 5px 20px;
+	background-color: #4267b2;
+	color: #fff;
+	float: right;
+
+}
+/* main content */
+/*status*/
+.status .content_text{
+	margin-bottom: 20px;
+}
+.status .row{
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.content_images .row2_1 .pic1, .content_images .row2_1 .pic2, .content_images .row2 .pic1, .content_images .row2 .pic2{
+	background-size: cover;
+	display: block;
+	min-height: 300px;
+	max-height: 400px;
+	max-width: 100%;
+	background-repeat:no-repeat;
+} 
+.content_images .row1, .content_images .row1 .pic1{
+	background-size:cover;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	background-repeat:no-repeat;
+	min-height: 400px;
+	max-height: 500px;
+	margin-bottom: 5px;
+}
+.content_images .row2_1 .pic1,.content_images .row2 .pic1{
+	margin-bottom: 10px;
+}
+.content_images .row img{
+	margin:0;
+	padding:5px;
+	max-width: 100%;
+}
+/*myprofile on the left */
+.myprofile{
+	display: none;
+}
+
+/* main content */
+/* new status panel */
+#add_photo_fg{
+	border-top: 1px solid #ddd;
+	padding: 10px 0px;
+}
+.status_photo_thumnail{
+	display: inline-block;
+	position: relative;
+}
+.status_photo_thumnail i{
+	position: absolute;
+	top:0;
+	right: 2px;
+	display: none;
+}
+.status_photo_thumnail i:hover{
+	color: white;
+	cursor: pointer;
+}
+.status_photo_thumnail img{
+	width: 70px;
+	height: 70px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.overlay{
+	
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.blurred{
+	background-color: rgb(166, 166, 166);
+	color: rgb(242, 242, 242);
+	opacity: 0.7;
+}
+/* feeds */
+
+.status .followee_profile_img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right:10px;
+}
+.status{
+	padding: 13px;
+	background-color: #fff;
+	margin-top: 15px;
+	text-align: left;
+}
+.status_content{
+	margin-bottom: 15px;
+}
+.status_header {
+	margin-bottom: 20px;
+}
+.status p{
+	margin:0;
+	padding:0;
+}
+.followee_prefName {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.time_ago{
+	font-size: 0.9em;
+	color: #7f7f7f;
+}
+.status_actions{
+	padding: 10px;
+	text-align: center;
+}
+.status_actions a:nth-child(2){
+	margin-right: 65px;
+	margin-left: 65px;
+}
+#more_data{
+	
+	display: block;
+	width:150px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.status_header img:hover{
+	cursor: pointer;
+}
+/* tablet and desktop */
+
+@media screen and (min-width: 768px) {
+    .left_img{
+    	display: block;
+    	margin-top: 100px;
+    }
+    .glyphicon{
+		font-size: 1.5em;
+	}
+	#defaultAvatar{
+		width:25px;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-brand{
+		display: inline-block;
+	}
+	.navbar-form .input-group{
+		width: 400px;
+	}
+	#addProfilePicture{
+		width: 400px;
+		height: auto;
+	}
+	.status .row2_1 .pic1,.content_images .row2 .pic1{
+		width: 49%;
+		float:left;
+	}
+	 .status .row2_1 .pic2,.content_images .row2 .pic2{
+		width: 49%;
+		float:right;
+	}
+}
+@media screen and (min-width: 768px){
+	.navbar-right-loggedin{
+		display: initial;
+		float: right;
+	}
+	.navbar-right{
+		display: initial;
+	}
+	.myprofile{
+	display: initial;
+	}
+
+}
+
